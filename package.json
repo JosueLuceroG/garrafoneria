@@ -1,0 +1,31 @@
+{
+  "name": "garrafoneria",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Sistema de reparto y administración para garrafonerías.",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:admin": "npm run dev --workspace @garrafoneria/admin-web",
+    "dev:mobile": "npm run start --workspace @garrafoneria/mobile",
+    "build": "npm run build --workspaces --if-present",
+    "typecheck": "tsc --build",
+    "lint": "eslint .",
+    "format:check": "prettier --check .",
+    "format": "prettier --write .",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "^8.18.0",
+    "@types/node": "^22.10.2",
+    "eslint": "^9.17.0",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

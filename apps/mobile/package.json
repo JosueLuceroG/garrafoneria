@@ -1,0 +1,23 @@
+{
+  "name": "@garrafoneria/mobile",
+  "version": "0.1.0",
+  "private": true,
+  "main": "expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@garrafoneria/domain": "0.1.0",
+    "expo": "~52.0.0",
+    "expo-location": "~18.0.4",
+    "expo-sqlite": "~15.1.4",
+    "react": "18.3.1",
+    "react-native": "0.76.6",
+    "react-native-svg": "15.8.0"
+  },
+  "devDependencies": {
+    "@types/react": "~18.3.12"
+  }
+}

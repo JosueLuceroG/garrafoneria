@@ -1,0 +1,14 @@
+node_modules/
+dist/
+build/
+.expo/
+.turbo/
+.cache/
+coverage/
+*.log
+.env
+.env.*
+!.env.example
+*.tsbuildinfo
+.DS_Store
+supabase/.temp/
